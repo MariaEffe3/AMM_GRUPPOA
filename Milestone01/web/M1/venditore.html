@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<!--Milestone 01 di Maria Francesca Carboni, numero di matricola 48894-->
+
+<html>
+    <head>
+        <title>Venditore ~ Violet D&egrave;licat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content = "Pagina del venditore di un negozio di profumi online" >
+        <meta name="author" content="Maria Francesca Carboni">
+    </head>
+    
+    
+    
+    <body>
+        <header>
+            <h1>Violet D&egrave;licat</h1>
+            <!--Aggiungo la sezione di navigazione con i link a login.html e descrizione.html-->
+            <nav>
+                <h4>Link utili</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="descrizione.html">Descrizione</a></li>
+                    </ul>
+            </nav>
+        </header>
+        
+        <h2>Venditore</h2>
+        
+        <form action="venditore.html" method="get">
+            <!--Tramite una input di tipo text creo lo spazio per inserire il nome dell'oggetto-->
+            <label for="nomeoggetto" >Nome Oggetto: </label>
+            <input type="text" name="nomeoggetto" id="nomeoggetto"/>
+             <br/><br/>
+             
+            <!--Tramite una input di tipo text creo lo spazio per inserire l'URL dell'immagine-->
+            <label for="url">URL Immagine: </label>
+            <input type="text" name="url" id="url"/>
+            <br/><br/>
+            
+            <!--Tramite una textarea creo lo spazio per inserire la descrizione dell'oggetto
+                specificando che vi sarà uno spazio di visualizzazione di 6 righe e 35 colonne
+            -->
+            <label for="descrizione">Descrizione Oggetto:</label>
+            <textarea rows="6" cols="35" name="descrizione" id="descrizione"></textarea>
+            <br/><br/>
+            
+            <!--Tramite una input di tipo text creo lo spazio per inserire il prezzo dell'oggetto-->
+            <label for="prezzo">Prezzo Oggetto</label>
+            <input type="text" name="prezzo" id="prezzo"/>
+            <br/><br/>
+            
+            <!--Tramite una input di tipo text creo lo spazio per inserire la quantita' di oggetti disponibili-->
+            <label for="quantita">Quantit&agrave; Disponibili:</label>
+            <input type="text" name="quantita" id="quantita"/>
+            <br/><br/>
+            
+            <!--Creo un pulsante di tipo input che inviera' i dati a venditore.html in questo caso-->    
+            <input type="submit" value="Aggiungi Oggetto" />
+        
+        </form>
+        
+        <br/><br/>
+        
+        <footer>
+            <p>Pagina creata da Maria Francesca Carboni</p></li>
+        </footer>
+        
+    
+    </body>
+</html>
