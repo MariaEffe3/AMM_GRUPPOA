@@ -1,0 +1,596 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-lug-2016, 15.40.15
+    Author     : Maria
+*/
+
+body
+{   
+    margin: 0;
+    padding: 0;
+    padding-top: 140px;
+    background-image: url('img/pattern_.png');
+}
+
+/*  Paragrafo   */
+p
+{
+    font-family: "Sitka Text","Gentium Basic","Georgia", "Times New Roman";
+    color: #242331;
+    font-size: 16.5px;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+/*  Intestazioni   */
+h1
+{
+    font-family: "Times New Roman","Gentium Basic","Constantia" ;
+    font-size: 33px;
+    color: #6D6199;
+    font-weight: lighter;
+}
+
+h2
+{
+    font-family: "Georgia","Constantia", "Times New Roman";
+    font-size: 26px;
+    color: #1e0033;
+    font-weight: normal;
+}
+
+h3
+{
+    font-family: "Cambria","Constantia", "Times New Roman";
+    font-size: 22px;
+    color: #5b4a67;
+    font-weight: normal;
+}
+
+h4
+{
+    font-family: "Cambria","Constantia", "Times New Roman";
+    font-size: 19px;
+    color: #9178a2;
+    font-weight: lighter;
+}
+
+ p, h1, h2, h3, h4, ul.listatesto li, div.right
+{
+    z-index: 98;
+    padding: 10px;
+}
+/*  Barra di navigazione  */
+nav.navbar
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.barra
+{   
+    z-index: 100;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    list-style-type: none;
+    height: 127px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+ul.barra li.barraelenco a, input.buttonFormLink
+{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Georgia", "Times New Roman";
+    text-transform: uppercase;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+
+input.buttonFormLink
+{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: 0px;
+    background: none;
+    border: none;
+}
+
+
+
+/*Fine barra di navigazione*/
+
+
+nav.navside > ul li a
+{
+    text-transform: uppercase;
+}
+
+ul#listacatalogo
+{
+    list-style-type: circle;
+    display: inline;
+    
+}
+
+footer
+{
+    margin-top: 30px;
+    background-color: #d4c9ea;
+}
+
+
+ul.barra li.barraelenco a:hover, input.buttonFormLink:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+ul.errore
+{
+    margin-left: 0;
+    margin-top: 50px;
+    padding-left: 20px;
+    color: red;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    text-transform: capitalize;
+    list-style-type:square;
+    background-color: whitesmoke;
+    border: 1px;
+    border-color: gray;
+}
+
+ul.avviso
+{
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    color: black;
+    font-size: 20px;
+    font-family: "Times New Roman";
+    text-transform: capitalize;
+    list-style-type: none;
+    background-color: whitesmoke;
+    border: 1px;
+    border-color: gray;
+}
+
+/*  Link   */
+a:link
+{
+    text-decoration: underline;
+    color: #2f0d89; 
+}
+
+a:visited
+{
+    color: #c59fed;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+a:active
+{
+    text-decoration: blink;
+}
+
+/* Fine link */
+
+/* Visualizzazione input*/
+
+input[type=text],input[type=password], textarea
+{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: #c1a0d2;
+    font-family: "Consolas";
+    font-size: 13px;
+    padding-left: 2px;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus
+{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+}
+
+/* Fine Visualizzazione input*/
+
+/*Allineamento campi di input*/
+div.tablogven
+{
+    display: inline-table;
+}
+
+span.row
+{
+    display: table-row;
+}
+
+label
+{
+    padding-top: 15px;
+    
+}
+
+*.cell1
+{
+    margin: 15px;
+    width: 250px;
+}
+
+*.cell, *.cell1
+{
+    display: table-cell;
+}
+
+label#descr
+{
+    position: relative;
+    bottom: 100px;
+}
+/* Fine allineamento campi di input*/
+
+input#button
+{
+    background-color: #463b57;
+    color: white;
+    padding: 5px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+input#button:hover
+{
+    background-color: #7f6d9b;
+    color: white;
+}
+
+input#button:active
+{
+    background-color: #e192ff;
+    color: white;
+}
+
+/*Descrizione*/
+
+a#marche > ul li
+{
+    float:left;
+    list-style-type: none;
+}
+/*Fine Descrizione*/
+
+
+/*Tabella cliente*/
+
+table#tabcliente, td, tr, th
+{
+    border: 1px;
+    border-style: solid;
+    border-color: #755b81;
+    border-collapse: collapse;
+}
+
+table#tabcliente
+{
+    width: 93%;
+    text-align: center;
+}
+
+th
+{
+    background-color: #533482;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    height: 30px;
+}
+
+tr > td
+{
+    background-color: #e9d4f3;
+    font-weight: normal;
+    font-family: "Gentium Book Basic";
+    height: 220px;
+    width: 210px;
+    padding: 5px;
+    padding-bottom: 0;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+tr.pari td
+{
+    background-color: #d4daf3;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+/*Fine tabella cliente*/
+
+/*Inizio barra navigazione pagina*/
+nav.navside > ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 99;
+    position: fixed;
+    overflow: auto;
+    top: 130px;
+    background-color: #f8eff9;
+    font-size: 12px;
+    border-bottom: 1px #b1a4b5  solid;
+}
+    
+    nav.navside > ul > li
+    {
+        float: left;
+        padding: 10px;
+        padding-top: 15px;
+    }
+
+
+
+@media only screen and (min-width: 1024px) 
+{   
+    body
+    {
+        padding-top: 50px;
+    }
+    
+    article
+    {
+        padding: 15px;
+        width: 98%;
+    }
+    
+    li
+    {
+        padding: 10px;
+    }
+    
+    p, h1, h2, h3, h4, ul.listatesto li, div.right
+    {
+        position: relative;
+        z-index: 98;
+        padding: 15px;
+        left: 25%;
+        width: 72.5%;
+    }
+    
+    article.compil
+    {
+        position: relative;
+        left: 15%;
+    }
+    
+    input[type="submit"]
+    {
+        position: absolute;
+        left: 15%;
+    }
+    
+    /* Inizio Barra di navigazione sito*/
+    
+    ul.barra
+    {
+        list-style-type: none;
+        height: 50px;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;    
+        top: 0;
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul.barra li#logo 
+    {
+        clear: left;
+        left: 15px;
+        padding: 0;
+        padding-left: 15px;
+    }
+    
+    ul.barra li.barraelenco, input.buttonFormLink
+    {
+        padding-top: 0;
+        margin-top: 0;
+        padding: 0;
+        padding-right: 60px;
+        padding-bottom: 25px;
+        float: right;
+        position: relative;
+        display: inline-block;
+        bottom: 37px;
+    }
+    /* Fine barra di navigazione sito*/
+    
+    /*Inizio barra navigazione pagina*/
+
+    nav.navside ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        height: 100%;
+        z-index: 99;
+        position: fixed;
+        overflow: auto;
+        top: 50px;
+        background-color:#e8d0ff;
+        border-right: 1px #6d5076 solid;
+    }
+    
+    nav.navside > ul > li
+    {
+        position: relative;
+        float: none;
+        top: 30px;
+        left: 15px;
+    }
+    
+    nav.navside > ul > li.barraelenco a
+    {
+        font-size: 17px;
+        padding: 10px;
+        font-family: "Times New Roman"; 
+    }
+    
+    a#marche > ul
+    {   
+        position: static;
+        margin-left: 400px;
+        margin-bottom: 50px;
+    }
+    
+    a#marche > ul li
+    {
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+
+    }
+    
+    footer
+    {
+       margin-top: 230px;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{   
+    body
+    {
+        padding-top: 140px;
+    }
+    
+    input[type="submit"]
+    {
+        position: absolute;
+        left: 40%;
+    }
+    
+    footer
+    {
+        margin-top: 100px;
+    }
+    
+    /*Inizio Descrizione*/
+    a#marche > ul li
+    {
+        float:none;
+    }
+    a#marche 
+    {
+        margin-bottom: 250px;
+    }
+    /*Fine Descrizione*/
+    
+    /* Inizio Toolbar */
+    ul.barra
+    {
+        width: 100%;
+        height: 90px;
+        position: fixed;
+        top: 0;
+        padding-bottom: 10px;
+    }
+    
+    ul.barra li#logo
+    {
+        position: relative;
+        left: 40%;
+        margin:0;
+    }
+    
+    ul.barra li.barraelenco, input.buttonFormLink
+    {
+        left: 50%;
+        padding: 0;
+        position: inherit;
+        
+    }
+    
+    ul.barra li#logo, ul.barra li.barraelenco, input.buttonFormLink
+    {
+        float: none;
+    }
+    
+    input.buttonFormLink
+    {
+        left: 100%;
+    }
+    
+    ul.barra li.barraelenco a, input.buttonFormLink
+    {
+        font-size: 9px;
+    }
+    
+    /* Fine Toolbar */
+    
+     /*Inizio barra navigazione pagina*/
+    nav.navside > ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 95px;
+        z-index: 99;
+        position: fixed;
+        overflow: auto;
+        top: 80px;
+        background-color:#e8d0ff;
+        font-size: 9px;
+    }
+    
+    nav.navside > ul > li
+    {   
+        left: 50%;
+        right: 50%;
+        padding-left: 5px;
+        padding-bottom: 0;
+        padding-top: 5px;
+        font-size: 9px;
+        float: none;
+    }
+    
+    
+}

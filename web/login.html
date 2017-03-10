@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--Progetto di Maria Francesca Carboni, numero di matricola 48894-->
+
+<html>
+    <head>
+        <title>Login ~ Violet D&egrave;licat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content = "Pagina di login di un negozio di profumi online" >
+        <meta name="author" content="Maria Francesca Carboni">
+        <link rel="icon" href="img/iconasito.png" type="image/png" />
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    </head>
+    
+    <body>
+        
+        <header> 
+            <a id="top"></a>
+            <h1>Violet D&egrave;licat</h1>
+           
+            <!--Creo la sezione di navigazione che rimanda alle pagine
+                descrizione.html, venditore.html e cliente.html
+            -->
+            <nav>
+                <ul class="barra">
+                    <li id="logo"><img title="logo" alt="Violet D&grave;licat" src="img/logo.png" width="76" height="52"></li>
+                    <li class="barraelenco"><a href="login.html">Login</a></li>
+                    <li class="barraelenco"><a href="cliente.jsp">Cliente</a></li>
+                    <li class="barraelenco"><a href="venditore.jsp">Venditore</a></li>
+                    <li class="barraelenco"><a href="descrizione.html">Descrizione</a></li>
+                </ul>
+            </nav>
+            
+            <div><h2>Login</h2></div>
+        </header>
+        
+        <nav class="navside">
+            <ul>
+                <li class="barraelenco"><a href="#top">Torna su</a></li>
+            </ul>
+        </nav>
+        
+        <article class="compil">
+            <h4>Inserisci i tuoi dati</h4>
+            
+            <div class="right">
+                <form method="post" action="Login">
+                    <input type="hidden" name="cmd" value="Login">
+                        <div class="tablogven">
+                            <span class="row">
+                                <!--Creo lo spazio per inserire il nome utente-->
+                                <label for="nomeutente" class="cell">Nome Utente:</label>
+                                <input type="text" name="username" id="nomeutente" class="cell1"/>
+                            </span>
+
+                            <span class="row">
+                                <!--Creo lo spazio per inserire la password-->
+                                <label for="password" class="cell">Password:</label>
+                                <input type="password" name="password" id="password" class="cell1"/>
+                            </span>
+                        </div>
+                        <span class="row">
+                        <!--Creo il pulsante per inviare il form-->
+                            <input id="button" type="submit" name="Submit" value="Accedi" />
+                        </span>
+                    </form>
+                </div>
+        </article>
+        
+        <footer>
+            <div>
+                <p>Pagina creata da Maria Francesca Carboni</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>
