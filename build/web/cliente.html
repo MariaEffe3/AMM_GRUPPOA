@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<!--Progetto di Maria Francesca Carboni, numero di matricola 48894-->
+
+<html>
+    <head>
+        <title>Cliente ~ Violet D&egrave;licat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content = "Pagina del cliente di un negozio di profumi online" >
+        <meta name="author" content="Maria Francesca Carboni">
+        <link rel="icon" href="img/iconasito.png" type="image/png" />
+        <link href= "style.css" rel= "stylesheet" type= "text/css" media= "screen">
+    </head>
+    
+    <body>
+        <header>
+            <a id="top"></a>
+            <div><h1>Violet D&egrave;licat</h1></div>
+            
+            <!--Creo la sezione di navigazione che rimanda a login.html e a descrizione.html-->
+            <nav>
+                <!--<h4>Link utili</h4>-->
+                <ul class="barra">
+                    <li id="logo"><img title="logo" alt="Violet D&grave;licat" src="img/logo.png" width="76" height="52"></li>
+                    <li class="barraelenco"><a href="login.html">Login</a></li>
+                    <li class="barraelenco"><a href="cliente.jsp">Cliente</a></li>
+                    <li class="barraelenco"><a href="venditore.jsp">Venditore</a></li>
+                    <li class="barraelenco"><a href="descrizione.jsp">Descrizione</a></li>
+                </ul>
+            </nav>
+
+            <div><h2>Cliente</h2></div>
+        </header>
+        
+        <nav class="navside">
+            <ul>
+                <li class="barraelenco"><a href="#top">Torna su</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Tabella Cliente</h2>
+            <div class="right"><!--Creo la tabella-->
+                <table id="tabcliente">
+
+                    <!--Inserisco nella prima riga le intestazioni della tabella-->
+                    <tr>
+                        <th>Nome Oggetto</th>
+                        <th>Immagine</th>
+                        <th>Q.&agrave; Disponibili</th>
+                        <th>Prezzo</th>
+                        <th>Aggiungi al carrello</th>
+                    </tr>
+
+                    <!--Inserisco i dati degli oggetti, ad ogni riga ci sara' un oggetto diverso-->
+                    <tr class="pari">
+                        <!--Campo nome oggetto-->
+                        <td>Miss Dior Eau de Parfum</td>
+
+                        <!--Immagine descrittiva oggetto-->
+                        <td><img title="missdior" alt="Miss Dior Eau de Parfum" src="img/Miss_Dior.jpg" width="200" height="200">
+
+                        <!--Quantita' oggetto-->
+                        <td>23</td>
+
+                        <!--Prezzo Oggetto-->
+                        <td>60,00 €</td>
+
+                        <!--Con una form permetto all'utente di aggiungere nel carrello l'oggetto tramite un button con un'immagine,
+                            il button inviera' l'aggiunta a cliente.html
+                        -->
+                        <td>
+                            <form action="cliente.html" method="get">
+                                <button type="submit">
+                                    <img title="addcart" alt="Aggiungi al Carrello" src="img/aggiungi_it.gif" width="100" height="37">
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Dior Addict Eau de Parfum</td>
+
+                        <td><img title="dioraddict" alt="Dior Addict Eau de Parfum" src="img/dioraddict_edp.jpg" width="200" height="200">
+
+                        <td>36</td>
+
+                        <td>60,30 €</td>
+
+                        <td>
+                            <form action="cliente.html" method="get">
+                                <button type="submit">
+                                    <img title="addcart" alt="Aggiungi al Carrello" src="img/aggiungi_it.gif" width="100" height="37">
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+
+                    <tr class= "pari"> 
+                        <td>J'adore Eau de Parfum</td>
+
+                        <td><img title="jadore" alt="J'adore Eau de Parfum" src="img/jadore_edp.jpg" width="200" height="200">
+
+                        <td>42</td>
+
+                        <td>62,60 €</td>
+
+                        <td>
+                            <form action="cliente.html" method="get">
+                                <button type="submit">
+                                    <img title="addcart" alt="Aggiungi al Carrello" src="img/aggiungi_it.gif" width="100" height="37">
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Poison Girl</td>
+
+                        <td><img title="poisongirl" alt="Poison Girl" src="img/poisongirl_edp.jpg" width="200" height="200">
+
+                        <td>39</td>
+
+                        <td>55,30 €</td>
+
+                        <td>
+                            <form action="cliente.html" method="get">
+                                <button type="submit">
+                                    <img title="addcart" alt="Aggiungi al Carrello" src="img/aggiungi_it.gif" width="100" height="37">
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class="pari">
+                        <td>Bleu de Chanel Eau de Toilette</td>
+
+                        <td><img title="bleudechanel" alt="Bleu de Chanel Eau de Toilette" src="img/bleudechanel_edt.jpg" width="200" height="200">
+
+                        <td>63</td>
+
+                        <td>60,00 €</td>
+
+                        <td>
+                            <form action="cliente.html" method="get">
+                                <button type="submit">
+                                    <img title="addcart" alt="Aggiungi al Carrello" src="img/aggiungi_it.gif" width="100" height="37">
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </article> 
+            <br/><br/>
+
+            <footer>
+                <div><p>Pagina creata da Maria Francesca Carboni</p></div>
+            </footer>
+
+    </body>
+</html>
